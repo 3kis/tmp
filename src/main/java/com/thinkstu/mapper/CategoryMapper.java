@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Mapper;
  * 菜品及套餐分类(Category)表数据库访问层
  *
  * @author asher
- * @since 2023-04-14 12:09:37
+ * @since 2024-04-14 12:09:37
  */
 @Mapper
 public interface CategoryMapper extends BaseMapper<Category> {

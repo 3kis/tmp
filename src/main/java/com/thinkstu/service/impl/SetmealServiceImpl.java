@@ -1,26 +1,33 @@
 package com.thinkstu.service.impl;
 
 
-import com.baomidou.mybatisplus.core.conditions.query.*;
-import com.baomidou.mybatisplus.extension.plugins.pagination.*;
-import com.baomidou.mybatisplus.extension.service.impl.*;
-import com.thinkstu.common.*;
-import com.thinkstu.dto.*;
-import com.thinkstu.entity.*;
-import com.thinkstu.mapper.*;
-import com.thinkstu.service.*;
-import org.springframework.beans.*;
-import org.springframework.beans.factory.annotation.*;
-import org.springframework.stereotype.*;
-import org.springframework.transaction.annotation.*;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.thinkstu.common.MyCheckException;
+import com.thinkstu.dto.SetmealDTO;
+import com.thinkstu.entity.Category;
+import com.thinkstu.entity.Dish;
+import com.thinkstu.entity.Setmeal;
+import com.thinkstu.entity.SetmealDish;
+import com.thinkstu.mapper.SetmealMapper;
+import com.thinkstu.service.CategoryService;
+import com.thinkstu.service.DishService;
+import com.thinkstu.service.SetmealDishService;
+import com.thinkstu.service.SetmealService;
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 套餐(Setmeal)表服务实现类
  *
- * @author thinkstu
- * @since 2023-04-14 16:06:16
+ * @author asher
+ * @since 2024-04-14 16:06:16
  */
 @Service
 public class SetmealServiceImpl extends ServiceImpl<SetmealMapper, Setmeal> implements SetmealService {

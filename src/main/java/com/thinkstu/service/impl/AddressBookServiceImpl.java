@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
  * 地址管理(AddressBook)表服务实现类
  *
  * @author asher
- * @since 2023-04-26 04:47:40
+ * @since 2024-04-26 04:47:40
  */
 @Service
 public class AddressBookServiceImpl extends ServiceImpl<AddressBookMapper, AddressBook> implements AddressBookService {

@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
  * 购物车(ShoppingCart)表服务实现类
  *
  * @author asher
- * @since 2023-04-26 10:33:12
+ * @since 2024-04-26 10:33:12
  */
 @Service
 public class ShoppingCartServiceImpl extends ServiceImpl<ShoppingCartMapper, ShoppingCart> implements ShoppingCartService {

@@ -1,21 +1,23 @@
 package com.thinkstu.controller;
 
 
-import com.baomidou.mybatisplus.core.conditions.query.*;
-import com.thinkstu.common.*;
-import com.thinkstu.entity.*;
-import com.thinkstu.service.impl.*;
-import io.swagger.annotations.*;
-import org.springframework.beans.factory.annotation.*;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.thinkstu.common.BaseContext;
+import com.thinkstu.common.R;
+import com.thinkstu.entity.ShoppingCart;
+import com.thinkstu.service.impl.ShoppingCartServiceImpl;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
+import java.util.List;
 
 /**
  * 购物车(ShoppingCart)表控制层
  *
- * @author thinkstu
- * @since 2023-04-26 10:33:12
+ * @author asher
+ * @since 2024-04-26 10:33:12
  */
 @Api(tags = "购物车管理系统")
 @RestController

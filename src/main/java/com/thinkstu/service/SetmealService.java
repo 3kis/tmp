@@ -1,18 +1,19 @@
 package com.thinkstu.service;
 
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.*;
-import com.baomidou.mybatisplus.extension.service.*;
-import com.thinkstu.dto.*;
-import com.thinkstu.entity.*;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.thinkstu.dto.SetmealDTO;
+import com.thinkstu.entity.Dish;
+import com.thinkstu.entity.Setmeal;
 
-import java.util.*;
+import java.util.List;
 
 /**
  * 套餐(Setmeal)表服务接口
  *
- * @author thinkstu
- * @since 2023-04-14 16:06:16
+ * @author asher
+ * @since 2024-04-14 16:06:16
  */
 public interface SetmealService extends IService<Setmeal> {
     void add(SetmealDTO setmealDto);

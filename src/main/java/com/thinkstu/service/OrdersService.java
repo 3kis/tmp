@@ -10,7 +10,7 @@ import com.thinkstu.entity.Orders;
  * 订单表(Orders)表服务接口
  *
  * @author asher
- * @since 2023-04-26 13:40:52
+ * @since 2024-04-26 13:40:52
  */
 public interface OrdersService extends IService<Orders> {
     void order(Orders orders);

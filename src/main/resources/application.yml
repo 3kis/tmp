@@ -6,7 +6,7 @@ spring:
   datasource:
     druid:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
       username: root
       password: password1
       #      url: jdbc:mysql://47.94.55.73:3306/reggie?serverTimezone=UTC&useSSL=true
@@ -14,8 +14,13 @@ spring:
       #      password: "SzW7fh2Fs5d2ypwT"
   redis:
     #    host: 175.178.20.191
-    host: 127.0.0.1
-    password: 123456
+    master:
+      host: 127.0.0.1
+      port: 6379
+    slave:
+      nodes:
+        - 127.0.0.1:6380
+        - 127.0.0.1:6381    # 从节点 2
   cache:
     redis:
       time-to-live: 3600000   # 缓存时间，1小时

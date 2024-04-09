@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 /**
  * @author : Asher
- * @since : 2023-04/12, 9:26 AM, 周四
+ * @since : 2024-04/12, 9:26 AM, 周四
  **/
 @Mapper
 public interface EmployeeMapper extends BaseMapper<Employee> {

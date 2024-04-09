@@ -10,7 +10,7 @@ import java.util.Map;
  * Result结果对象
  *
  * @author : Asher
- * @since : 2023-04/12, 9:40 AM, 周四
+ * @since : 2024-04/12, 9:40 AM, 周四
  **/
 @Data
 public class R<T> implements Serializable {

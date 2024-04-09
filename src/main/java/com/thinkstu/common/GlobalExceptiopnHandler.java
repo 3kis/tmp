@@ -10,7 +10,7 @@ import java.sql.SQLIntegrityConstraintViolationException;
  * 全局异常处理器
  *
  * @author : Asher
- * @since : 2023-04/12, 8:43 PM, 周四
+ * @since : 2024-04/12, 8:43 PM, 周四
  **/
 @Slf4j
 @RestControllerAdvice

@@ -19,8 +19,8 @@ import java.util.Map;
 /**
  * 用户信息(User)表控制层
  *
- * @author thinkstu
- * @since 2023-04-16 10:51:45
+ * @author asher
+ * @since 2024-04-16 10:51:45
  */
 @Slf4j
 @Api(tags = "前台用户系统")

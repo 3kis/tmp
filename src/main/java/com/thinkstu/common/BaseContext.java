@@ -4,7 +4,7 @@ package com.thinkstu.common;
  * 线程同步
  *
  * @author : Asher
- * @since : 2023-04/14, 9:15 AM, 周六
+ * @since : 2024-04/14, 9:15 AM, 周六
  **/
 public class BaseContext {
     private static ThreadLocal<Long> local = new ThreadLocal<>();

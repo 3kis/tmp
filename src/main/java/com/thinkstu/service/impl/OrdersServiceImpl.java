@@ -29,7 +29,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 订单表(Orders)表服务实现类
  *
  * @author asher
- * @since 2023-04-26 13:40:52
+ * @since 2024-04-26 13:40:52
  */
 @Service
 @Slf4j
@@ -60,6 +60,7 @@ public class OrdersServiceImpl extends ServiceImpl<OrdersMapper, Orders> impleme
             throw new MyCheckException("购物车不能为空！");
         }
         User user = userService.getById(userId);
+        log.info(" user==>{}", user);
         AddressBook addressBook = addressBookService.getById(orders.getAddressBookId());
         if (addressBook == null) {
             throw new MyCheckException("地址信息有误！");

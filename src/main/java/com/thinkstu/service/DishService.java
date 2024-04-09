@@ -12,7 +12,7 @@ import java.util.List;
  * 菜品管理(Dish)表服务接口
  *
  * @author asher
- * @since 2023-04-14 16:05:35
+ * @since 2024-04-14 16:05:35
  */
 public interface DishService extends IService<Dish> {
     void add(DishDTO dishDto);

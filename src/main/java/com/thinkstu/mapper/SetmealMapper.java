@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
  * 套餐(Setmeal)表数据库访问层
  *
  * @author asher
- * @since 2023-04-14 16:06:16
+ * @since 2024-04-14 16:06:16
  */
 @Mapper
 public interface SetmealMapper extends BaseMapper<Setmeal> {
