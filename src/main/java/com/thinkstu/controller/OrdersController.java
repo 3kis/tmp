@@ -34,6 +34,8 @@ public class OrdersController {
     @ApiOperation("下单订单")
     R<String> submit(@RequestBody Orders orders) {
         if (existOrderMap.containsKey(orders.getId())) return R.success("下单成功");
+        else existOrderMap.put(orders.getId(), true);
+
         service.order(orders);
         return R.success("下单成功~");
     }
