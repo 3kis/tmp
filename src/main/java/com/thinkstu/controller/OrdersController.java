@@ -22,7 +22,7 @@ import java.util.Map;
  */
 @Api(tags = "订单系统")
 @RestController
-@RequestMapping("order")
+@RequestMapping("/order")
 public class OrdersController {
 
     Map<Long, Boolean> existOrderMap = new HashMap<>();
@@ -30,7 +30,7 @@ public class OrdersController {
     @Autowired
     OrdersServiceImpl service;
 
-    @PostMapping("submit")
+    @PostMapping("/submit")
     @ApiOperation("下单订单")
     R<String> submit(@RequestBody Orders orders) {
         if (existOrderMap.containsKey(orders.getId())) return R.success("下单成功");
